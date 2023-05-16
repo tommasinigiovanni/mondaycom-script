@@ -43,5 +43,5 @@ List all the boards of the authenticated user that begin with a given string.
 The string is passed as an argument (`STARTWITH`) to the script.
 
 ```bash
-docker run -it -e FILE_TO_RUN="list_boards_startswith.py" -e STARTWITH='ABC' -e API_KEY="dd98ad90d09023.dion09320ddjoeq0qdj0jqdjt0vmj0dqn9qdus0pioijnbi1" --rm python-docker
+docker run -it -e FILE_TO_RUN="list_boards_startswith.py" -e STARTWITH="ABC" -e API_KEY="dd98ad90d09023.dion09320ddjoeq0qdj0jqdjt0vmj0dqn9qdus0pioijnbi1" --rm python-docker
 ```
