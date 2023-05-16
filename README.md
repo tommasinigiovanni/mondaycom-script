@@ -26,3 +26,22 @@ So an example of a command could be
 ```bash
 docker run -it -e FILE_TO_RUN="list_projects.py" -e API_KEY="dd98ad90d09023.dion09320ddjoeq0qdj0jqdjt0vmj0dqn9qdus0pioijnbi1" --rm python-docker
 ```
+
+## The scripts
+
+### list_boards.py
+
+List all the boards of the authenticated user
+
+```bash
+docker run -it -e FILE_TO_RUN="list_boards.py" -e API_KEY="dd98ad90d09023.dion09320ddjoeq0qdj0jqdjt0vmj0dqn9qdus0pioijnbi1" --rm python-docker
+```
+
+### list_boards_startswith.py
+
+List all the boards of the authenticated user that begin with a given string.  
+The string is passed as an argument (`STARTWITH`) to the script.
+
+```bash
+docker run -it -e FILE_TO_RUN="list_boards_startswith.py" -e STARTWITH='ABC' -e API_KEY="dd98ad90d09023.dion09320ddjoeq0qdj0jqdjt0vmj0dqn9qdus0pioijnbi1" --rm python-docker
+```

@@ -20,6 +20,6 @@ response = requests.post(url=api_url, json=data, headers=headers)
 response_json = json.loads(response.text)
 
 # Filter dashboards whose name starts with "ABC"
-ts_boards = [board for board in response_json['data']['boards'] if board['name'].startswith('ABC')]
+ts_boards = [board for board in response_json['data']['boards'] if board['name'].startswith(os.getenv('STARTWITH'))]
 
 print(json.dumps(ts_boards, indent=4))
